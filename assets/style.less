@@ -1,0 +1,105 @@
+@colorPrimary: #0097a7;
+@colorPrimaryLight: #56c8d8;
+@colorPrimaryDark: #006978;
+
+@colorSecondary: #bdbdbd;
+@colorSecondaryLight: #efefef;
+@colorSecondaryDark: #8d8d8d;
+
+@colorTextPrimary: #000000;
+@colorTextSecondary: #bdbdbd;
+@colorTextAccent: #ff5722;
+
+// variables: header
+@header-height: 64px;
+@header-nav-item-text-size: 1.4em;
+@header-nav-item-text-color: white;
+
+// variables: content
+@content-height-min: 800px;
+
+@subheader-height: 192px;
+
+
+// variables: footer
+@footer-height: 96px;
+
+
+
+
+#header {
+	height: @header-height;
+	background: @colorPrimary;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+#footer {
+	height: @footer-height;
+	background: @colorPrimaryLight;
+}
+
+#content {
+	min-height: @content-height-min;
+}
+
+#header-wrapper-logo {
+	height: @header-height;
+	display: table;
+	float: left;
+}
+
+#header-logo {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#header-wrapper-nav {
+	height: @header-height;
+	display: table;
+	float: right;
+}
+
+#header-nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-nav-item {
+	text-align: center;
+	font-size: @header-nav-item-text-size;
+	color: @header-nav-item-text-color;
+
+	// TODO: :hover selector not work
+	:hover {
+		text-decoration: none;
+		color: @colorTextAccent;
+	}
+
+	:focus {
+		text-decoration: none;
+		color: @colorTextAccent;
+	}
+
+	:link {
+		text-decoration: none;
+		color: @colorTextAccent;
+	}
+
+	:active {
+		text-decoration: none;
+		color: @colorTextAccent;
+	}
+
+	:visited {
+		text-decoration: none;
+	}
+}
+
+.header-nav-item-delimiter {
+	text-align: center;
+	font-size: @header-nav-item-text-size;
+	color: @header-nav-item-text-color;
+	padding-left: 8px;
+	padding-right: 8px;
+}

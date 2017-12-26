@@ -31,10 +31,6 @@ plugins: [jekyll-paginate, rouge]
 
 # This is for author page generation.
 
-collections:
-  study: {output: true, permalink: '/study/:path'}
-  experience: {output: true, permalink: '/experience/:path'}
-  authors: {output: true, permalink: '/authors/:path/'}
 defaults:
 - scope: {path: '', type: authors}
   values: {layout: author}

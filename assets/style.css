@@ -1,0 +1,62 @@
+#header {
+  height: 64px;
+  background: #0097a7;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#footer {
+  height: 96px;
+  background: #56c8d8;
+}
+#content {
+  min-height: 800px;
+}
+#header-wrapper-logo {
+  height: 64px;
+  display: table;
+  float: left;
+}
+#header-logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+#header-wrapper-nav {
+  height: 64px;
+  display: table;
+  float: right;
+}
+#header-nav {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header-nav-item {
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+}
+.header-nav-item :hover {
+  text-decoration: none;
+  color: #ff5722;
+}
+.header-nav-item :focus {
+  text-decoration: none;
+  color: #ff5722;
+}
+.header-nav-item :link {
+  text-decoration: none;
+  color: #ff5722;
+}
+.header-nav-item :active {
+  text-decoration: none;
+  color: #ff5722;
+}
+.header-nav-item :visited {
+  text-decoration: none;
+}
+.header-nav-item-delimiter {
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+}

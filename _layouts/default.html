@@ -10,11 +10,30 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"/>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css"/>
 </head>
 <body>
-	<div class="container">
+	<header id="header">
+		<!-- header content -->
+		<div id="header-wrapper-logo">
+			<a id="header-logo" href="/" >
+				<img src="assets/img/logo_tmp.png"/>
+			</a>
+		</div>
+
+		<div id="header-wrapper-nav">
+			<nav id="header-nav">
+				<a class="header-nav-item" href="#">Blog</a> <strong class="header-nav-item-delimiter">|</strong>
+				<a class="header-nav-item" href="#">About</a>
+			</nav>
+		</div>
+
+	</header>
+	<div id="content" class="container">
 		{{ content }}
 	</div>
+
+	<footer id="footer"></footer>
 	
 </body>
 </html>
