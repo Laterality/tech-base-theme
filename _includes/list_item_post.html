@@ -1,0 +1,11 @@
+<div class="post-list-item">
+	<a class="post-list-item-title-wrapper" href="{{include.post.url}}"><h1 class="post-list-item-title">{{include.post.title}}</h1></a>
+
+	<h4 class="post-list-item-date">{{include.post.date | date_to_string}}</h6>
+
+	<p class="post-list-item-description">
+		{% assign desc = include.post.content | split: '<!-- desc -->' %}
+		{{desc[1] | strip_html}}
+	</p>
+		<!-- TODO: truncate from post -->
+</div>

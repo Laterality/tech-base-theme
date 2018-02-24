@@ -9,6 +9,7 @@
 @colorTextPrimary: #000000;
 @colorTextSecondary: #bdbdbd;
 @colorTextAccent: #ff5722;
+@colorTextPrimaryHover: #828282;
 
 // variables: header
 @header-height: 64px;
@@ -16,9 +17,10 @@
 @header-nav-item-text-color: white;
 
 // variables: content
+@sub-header-title-text-color: white;
 @content-height-min: 800px;
 
-@subheader-height: 192px;
+@subheader-height: 320px;
 
 
 // variables: footer
@@ -35,11 +37,37 @@
 }
 
 #footer {
+	width: 100%;
 	height: @footer-height;
 	background: @colorPrimaryLight;
+	display: table;	
+
+	>.text-copyright {
+		color: white;
+		font-size: 1.2em;
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 10%;
+	}
+
+	.footer-ic-contact-wrapper {
+		width: 1.0em;
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 1.3em;
+	
+		.footer-ic {
+			width: 32px;
+			height: 32px;
+		}
+
+	}
 }
 
-#content {
+#content.container {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
 	min-height: @content-height-min;
 }
 
@@ -65,33 +93,30 @@
 	vertical-align: middle;
 }
 
-.header-nav-item {
+a.header-nav-item {
 	text-align: center;
 	font-size: @header-nav-item-text-size;
 	color: @header-nav-item-text-color;
 
 	// TODO: :hover selector not work
-	:hover {
-		text-decoration: none;
+	&:hover {
+		text-decoration: none; 
 		color: @colorTextAccent;
 	}
 
-	:focus {
+	&:focus {
 		text-decoration: none;
-		color: @colorTextAccent;
 	}
 
-	:link {
+	&:link {
 		text-decoration: none;
-		color: @colorTextAccent;
 	}
 
-	:active {
+	&:active {
 		text-decoration: none;
-		color: @colorTextAccent;
 	}
 
-	:visited {
+	&:visited {
 		text-decoration: none;
 	}
 }
@@ -102,4 +127,76 @@
 	color: @header-nav-item-text-color;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+
+.sub-menu-header {
+	width: 100%;
+	height: @subheader-height;
+	background: @colorPrimaryDark;
+	display: table;
+}
+
+.sub-menu-title {
+	color: @sub-header-title-text-color;
+	font-size: 3.6em;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 48px;
+}
+
+#post-list-container {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+}
+
+.post-list-delimiter {
+	background: @colorSecondary;
+	width: 100%;
+	height: 1px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-list-item-title-wrapper {
+	text-align: left;
+
+	&:hover, &:link, &:visited, &:active, &:focus {
+		text-decoration: none;
+	}
+
+}
+
+p.post-list-item-description {
+	text-align: left;
+}
+
+.post-list-item-title {
+	color: @colorTextPrimary;
+
+	&:hover {
+		color: @colorTextPrimaryHover;
+	}
+}
+
+.post-list-item-date {
+	text-align: left;
+	color: @colorTextSecondary;
+}
+
+#post-content-wrapper {
+	width: 75%;
+	margin: auto;
+}
+
+.post-content-title {
+	color: @colorTextPrimary;
+}
+
+.post-content-date {
+	text-align: left;
+	color: @colorTextSecondary;
 }

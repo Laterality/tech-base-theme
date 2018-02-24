@@ -15,16 +15,17 @@
 <body>
 	<header id="header">
 		<!-- header content -->
+		{% if site.logo %}
 		<div id="header-wrapper-logo">
 			<a id="header-logo" href="/" >
-				<img src="assets/img/logo_tmp.png"/>
+				<img src="{{site.logo}}" alt="{{site.name}}"/>
 			</a>
 		</div>
+		{% endif %}
 
 		<div id="header-wrapper-nav">
 			<nav id="header-nav">
-				<a class="header-nav-item" href="#">Blog</a> <strong class="header-nav-item-delimiter">|</strong>
-				<a class="header-nav-item" href="#">About</a>
+				<a class="header-nav-item" href="/blog">Blog</a>
 			</nav>
 		</div>
 
@@ -33,7 +34,13 @@
 		{{ content }}
 	</div>
 
-	<footer id="footer"></footer>
+	<footer id="footer">
+			<h6 class="text-copyright">Copyright 2017-{{ 'now' | date: '%Y' }} Latera All right reserved</h6>
+
+			<span class="footer-ic-contact-wrapper"><a href="https://github.com/{{site.github_username}}"><img class="footer-ic" src="/assets/img/github-logo.svg"/></a></span>
+			
+			<span class="footer-ic-contact-wrapper"><a href="mailto:{{site.mail}}"><img class="footer-ic" src="/assets/img/gmail.svg"/></a></span>
+	</footer>
 	
 </body>
 </html>

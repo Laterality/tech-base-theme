@@ -2,11 +2,12 @@
 # Basic site information.
 # TODO: You can change it to your information.
 
-name: Latera's Tech Blog
+name: Increment
 description: Just Tech Blog
-meta_description: Meta description here!
+github_username: Laterality
+mail: bluesky0255@gmail.com
 
-logo: false
+logo: /assets/img/logo_tmp.png
 background: false
 navigation: true
 paginate: 5

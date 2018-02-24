@@ -1,0 +1,1 @@
+lessc --source-map assets\style.less assets\style.css

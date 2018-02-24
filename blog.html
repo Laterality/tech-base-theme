@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include blog_header.html %}
+<div id="post-list-container">
+	{% for post in site.posts %}
+
+		{% include list_item_post.html post=post %}
+		{% if post.previous %}
+			<div class="post-list-delimiter"></div>
+		{% endif %}
+	{% endfor %}
+</div>

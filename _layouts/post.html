@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+{% include blog_header.html %}
+
+<div id="post-content-wrapper">
+	<h1 class="post-content-title">{{ page.title }}</h1>
+
+	<h4 class="post-content-date">{{ page.date | date_to_string }}</h6>
+
+	<p class="post-content-content">
+		{{ page.content }}
+	</p>
+</div>
