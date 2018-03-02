@@ -11,6 +11,7 @@ logo: /assets/img/logo_tmp.png
 background: false
 navigation: true
 paginate: 5
+paginate_path: "/blog/:num"
 
 
 # Less important changes below. (Code-highlighting, markdown)
