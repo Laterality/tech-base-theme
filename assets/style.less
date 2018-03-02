@@ -12,8 +12,7 @@
 @colorTextPrimaryHover: #828282;
 
 // variables: header
-@header-height: 8vh;
-@header-height-min: 64px;
+@header-height: 64px;
 @header-nav-item-text-size: 1.4em;
 @header-nav-item-text-color: white;
 
@@ -28,42 +27,68 @@
 @footer-height: 96px;
 
 
-body {
-	font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
-}
 
-// header
 
 #header {
-	width: 100vw;
 	height: @header-height;
-	min-height: @header-height-min;
 	background: @colorPrimary;
 	padding-left: 16px;
 	padding-right: 16px;
 }
 
-div#header-wrapper-logo {
-	height: 100%;
+#footer {
+	width: 100%;
+	height: @footer-height;
+	background: @colorPrimaryLight;
+	display: table;	
+
+	>.text-copyright {
+		color: white;
+		font-size: 1.2em;
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 10%;
+	}
+
+	.footer-ic-contact-wrapper {
+		width: 1.0em;
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 1.3em;
+	
+		.footer-ic {
+			width: 32px;
+			height: 32px;
+		}
+
+	}
+}
+
+#content.container {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	min-height: @content-height-min;
+}
+
+#header-wrapper-logo {
+	height: @header-height;
+	display: table;
 	float: left;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 #header-logo {
-	
+	display: table-cell;
+	vertical-align: middle;
 }
 
-div#header-wrapper-nav {
-	height: 100%;
+#header-wrapper-nav {
+	height: @header-height;
+	display: table;
 	float: right;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
-nav#header-nav {
+#header-nav {
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -93,35 +118,6 @@ a.header-nav-item {
 
 	&:visited {
 		text-decoration: none;
-	}
-}
-
-// footer
-#footer {
-	width: 100%;
-	height: @footer-height;
-	background: @colorPrimaryLight;
-	display: table;	
-
-	>.text-copyright {
-		color: white;
-		font-size: 1.2em;
-		display: table-cell;
-		vertical-align: middle;
-		padding-left: 10%;
-	}
-
-	.footer-ic-contact-wrapper {
-		width: 1.0em;
-		display: table-cell;
-		vertical-align: middle;
-		padding-right: 1.3em;
-	
-		.footer-ic {
-			width: 32px;
-			height: 32px;
-		}
-
 	}
 }
 
@@ -203,31 +199,4 @@ p.post-list-item-description {
 .post-content-date {
 	text-align: left;
 	color: @colorTextSecondary;
-}
-
-.back-to-list {
-	font-size: 1.3em;
-	margin-top: 2.0em;
-}
-
-#main-content {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-.main-content-box {
-	width: 100%;
-	flex: 1;
-}
-
-.main-recent-posts-wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.main-recent-post {
-	border: 2px solid gray;
 }

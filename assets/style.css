@@ -1,52 +1,8 @@
-body {
-  font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
-}
 #header {
-  width: 100vw;
-  height: 8vh;
-  min-height: 64px;
+  height: 64px;
   background: #0097a7;
   padding-left: 16px;
   padding-right: 16px;
-}
-div#header-wrapper-logo {
-  height: 100%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-div#header-wrapper-nav {
-  height: 100%;
-  float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-nav#header-nav {
-  display: table-cell;
-  vertical-align: middle;
-}
-a.header-nav-item {
-  text-align: center;
-  font-size: 1.4em;
-  color: white;
-}
-a.header-nav-item:hover {
-  text-decoration: none;
-  color: #ff5722;
-}
-a.header-nav-item:focus {
-  text-decoration: none;
-}
-a.header-nav-item:link {
-  text-decoration: none;
-}
-a.header-nav-item:active {
-  text-decoration: none;
-}
-a.header-nav-item:visited {
-  text-decoration: none;
 }
 #footer {
   width: 100%;
@@ -70,6 +26,51 @@ a.header-nav-item:visited {
 #footer .footer-ic-contact-wrapper .footer-ic {
   width: 32px;
   height: 32px;
+}
+#content.container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-height: 800px;
+}
+#header-wrapper-logo {
+  height: 64px;
+  display: table;
+  float: left;
+}
+#header-logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+#header-wrapper-nav {
+  height: 64px;
+  display: table;
+  float: right;
+}
+#header-nav {
+  display: table-cell;
+  vertical-align: middle;
+}
+a.header-nav-item {
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+}
+a.header-nav-item:hover {
+  text-decoration: none;
+  color: #ff5722;
+}
+a.header-nav-item:focus {
+  text-decoration: none;
+}
+a.header-nav-item:link {
+  text-decoration: none;
+}
+a.header-nav-item:active {
+  text-decoration: none;
+}
+a.header-nav-item:visited {
+  text-decoration: none;
 }
 .header-nav-item-delimiter {
   text-align: center;
@@ -139,27 +140,5 @@ p.post-list-item-description {
 .post-content-date {
   text-align: left;
   color: #bdbdbd;
-}
-.back-to-list {
-  font-size: 1.3em;
-  margin-top: 2.0em;
-}
-#main-content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.main-content-box {
-  width: 100%;
-  flex: 1;
-}
-.main-recent-posts-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.main-recent-post {
-  border: 2px solid gray;
 }
 /*# sourceMappingURL=style.css.map */

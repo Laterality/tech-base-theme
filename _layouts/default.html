@@ -30,20 +30,16 @@
 		</div>
 
 	</header>
-	<div id="content">
+	<div id="content" class="container">
 		{{ content }}
 	</div>
 
 	<footer id="footer">
 			<h6 class="text-copyright">Copyright 2017-{{ 'now' | date: '%Y' }} Latera All right reserved</h6>
 
-			{% if site.github_username %}
 			<span class="footer-ic-contact-wrapper"><a href="https://github.com/{{site.github_username}}"><img class="footer-ic" src="/assets/img/github-logo.svg"/></a></span>
-			{% endif %}
 			
-			{% if site.mail %}
 			<span class="footer-ic-contact-wrapper"><a href="mailto:{{site.mail}}"><img class="footer-ic" src="/assets/img/gmail.svg"/></a></span>
-			{% endif %}
 	</footer>
 	
 </body>
