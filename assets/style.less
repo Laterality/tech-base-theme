@@ -12,7 +12,7 @@
 @colorTextPrimaryHover: #828282;
 
 // variables: header
-@header-height: 8vh;
+@header-height: 5vh;
 @header-height-min: 64px;
 @header-nav-item-text-size: 1.4em;
 @header-nav-item-text-color: white;
@@ -35,7 +35,7 @@ body {
 // header
 
 #header {
-	width: 100vw;
+	width: 100%;
 	height: @header-height;
 	min-height: @header-height-min;
 	background: @colorPrimary;
@@ -49,10 +49,6 @@ div#header-wrapper-logo {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-#header-logo {
-	
 }
 
 div#header-wrapper-nav {
@@ -94,6 +90,10 @@ a.header-nav-item {
 	&:visited {
 		text-decoration: none;
 	}
+}
+
+div#content {
+	min-height: -webkit-fill-available;
 }
 
 // footer
