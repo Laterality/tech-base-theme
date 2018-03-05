@@ -1,19 +1,13 @@
 ---
 layout: default
---- 
-{%comment%} The tag above means - insert everything in this file into the {body} of the default.hbs template {%endcomment%}
+---
+{% include blog_header.html %}
+<div id="post-list-container">
+	{% for post in site.posts %}
 
-{%comment%} The main content area on the homepage {%endcomment%}
-<main id="main-content" role="main">
-
-	<div class="main-content-box">
-
-		<div class="main-recent-posts-wrapper">
-			{% assign posts = site.posts | top: 3 %}
-			{% for p in posts %}
-			<div class="main-recent-post">{{p.title}}</div>
-			{% endfor %}
-
-		</div>
-	</div>
-</main>
+		{% include list_item_post.html post=post %}
+		{% if post.previous %}
+			<div class="post-list-delimiter"></div>
+		{% endif %}
+	{% endfor %}
+</div>
