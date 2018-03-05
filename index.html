@@ -3,11 +3,25 @@ layout: default
 ---
 {% include blog_header.html %}
 <div id="post-list-container">
-	{% for post in site.posts %}
+	{% for post in paginator.posts %}
 
 		{% include list_item_post.html post=post %}
-		{% if post.previous %}
+		{% assign last = paginator.posts | last %}
+		{% if post != last %}
 			<div class="post-list-delimiter"></div>
 		{% endif %}
 	{% endfor %}
+
+	<!-- TODO: pagination should inserted here -->
+
+	<div id="post-list-pagination-wrapper">
+		{% for i in (1..paginator.total_pages) %}
+			{% if i == paginator.page %}
+				<span class="pagination-page-number page-number-current">{{ i }}</span>
+			{% else %}
+				<a href="/{% if i != 1%}{{ i }}{% endif %}"><span class="pagination-page-number">{{ i }}</span></a>
+			{% endif %}
+
+		{% endfor %}
+	</div>
 </div>

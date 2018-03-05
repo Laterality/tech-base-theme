@@ -10,8 +10,8 @@ mail: bluesky0255@gmail.com
 logo: /assets/img/logo_tmp.png
 background: false
 navigation: true
-paginate: 5
-paginate_path: "/blog/:num"
+paginate: 1
+paginate_path: "/:num"
 
 
 # Less important changes below. (Code-highlighting, markdown)

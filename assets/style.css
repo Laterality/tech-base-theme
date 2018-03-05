@@ -1,6 +1,15 @@
 body {
   font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
 }
+a:hover {
+  text-decoration: none;
+  color: #ff5722;
+}
+a:link a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+}
 #header {
   width: 100%;
   height: 5vh;
@@ -74,7 +83,7 @@ div#content {
   width: 32px;
   height: 32px;
 }
-.header-nav-item-delimiter {
+span.header-nav-item-delimiter {
   text-align: center;
   font-size: 1.4em;
   color: white;
@@ -164,5 +173,12 @@ p.post-list-item-description {
 }
 .main-recent-post {
   border: 2px solid gray;
+}
+div#post-list-pagination-wrapper {
+  font-size: 1.5em;
+}
+span.pagination-page-number {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
