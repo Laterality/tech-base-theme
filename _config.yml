@@ -10,7 +10,7 @@ mail: bluesky0255@gmail.com
 logo: /assets/img/logo_tmp.png
 background: false
 navigation: true
-paginate: 1
+paginate: 5
 paginate_path: "/:num"
 
 
