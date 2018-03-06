@@ -30,10 +30,13 @@
 
 body {
 	font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
+
+	color: @colorTextPrimary;
 }
 
 a {
 	&:hover {
+		color: @colorTextPrimary;
 		text-decoration: none;
 		color: @colorTextAccent;
 	}
@@ -112,8 +115,9 @@ div#content {
 #footer {
 	width: 100%;
 	height: @footer-height;
+	margin-top: 100px;
 	background: @colorPrimaryLight;
-	display: table;	
+	display: table;
 
 	>.text-copyright {
 		color: white;
@@ -164,6 +168,7 @@ span.header-nav-item-delimiter {
 #post-list-container {
 	width: 75%;
 	margin: auto;
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -246,10 +251,20 @@ p.post-list-item-description {
 }
 
 div#post-list-pagination-wrapper {
+	width: 75%;
+	position: absolute;
+	margin: auto;
+	margin-top: 100px;
+	bottom: 0px;
 	font-size: 1.5em;
 }
 
-span.pagination-page-number {
-	margin-left: 5px;
-	margin-right: 5px;
+a.pagination-link-prev {
+	position: absolute;
+	left: 10%;
+}
+
+a.pagination-link-next {
+	position: absolute;
+	right: 10%;
 }

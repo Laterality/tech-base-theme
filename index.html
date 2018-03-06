@@ -15,13 +15,11 @@ layout: default
 	<!-- TODO: pagination should inserted here -->
 
 	<div id="post-list-pagination-wrapper">
-		{% for i in (1..paginator.total_pages) %}
-			{% if i == paginator.page %}
-				<span class="pagination-page-number page-number-current">{{ i }}</span>
-			{% else %}
-				<a href="/{% if i != 1%}{{ i }}{% endif %}"><span class="pagination-page-number">{{ i }}</span></a>
-			{% endif %}
-
-		{% endfor %}
+		{% if paginator.previous_page %}
+			<a class="pagination-link pagination-link-prev" href="{{ paginator.previous_page_path }}">≪ 이전 페이지</a>
+		{% endif %}
+		{% if paginator.next_page %}
+			<a class="pagination-link pagination-link-next" href="{{ paginator.next_page_path }}">다음 페이지 ≫</a>
+		{% endif %}
 	</div>
 </div>
