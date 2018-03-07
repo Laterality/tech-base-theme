@@ -110,6 +110,18 @@ span.header-nav-item-delimiter {
   text-align: center;
   padding-bottom: 48px;
 }
+.bg1 {
+  background-image: url("/assets/img/submenu-cover-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg2 {
+  background-image: url("/assets/img/submenu-cover-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #post-list-container {
   width: 75%;
   margin: auto;
