@@ -30,6 +30,8 @@
 
 body {
 	font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
+	font-size: 16px;
+	line-height: 1.8em;
 
 	color: @colorTextPrimary;
 }
@@ -118,13 +120,15 @@ div#content {
 	margin-top: 100px;
 	background: @colorPrimaryLight;
 	display: table;
+	padding-left: 10%;
+	padding-right: 10%;
 
 	>.text-copyright {
 		color: white;
 		font-size: 1.2em;
 		display: table-cell;
 		vertical-align: middle;
-		padding-left: 10%;
+		
 	}
 
 	.footer-ic-contact-wrapper {
@@ -211,6 +215,7 @@ p.post-list-item-description {
 #post-content-wrapper {
 	width: 75%;
 	margin: auto;
+	margin-top: 50px;
 }
 
 .post-content-title {
@@ -220,6 +225,10 @@ p.post-list-item-description {
 .post-content-date {
 	text-align: left;
 	color: @colorTextSecondary;
+}
+
+.post-content-content {
+	margin-top: 35px;
 }
 
 .back-to-list {
@@ -267,4 +276,11 @@ a.pagination-link-prev {
 a.pagination-link-next {
 	position: absolute;
 	right: 10%;
+}
+
+
+// about page
+
+img.circular {
+	border-radius: 50%;
 }
