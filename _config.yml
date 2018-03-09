@@ -4,9 +4,14 @@
 
 name: Increment
 description: Just Tech Blog
+
+author: Latera
+comment:
+  > 
+  좋아서 시작한 코딩으로 먹고 살 생각까지 하고 있는 학생 개발자입니다.<br/>
+  백엔드 개발에 관심이 많습니다.
 github_username: Laterality
 mail: bluesky0255@gmail.com
-gravatar_email: bluesky0255@gmail.com
 
 logo: /assets/img/logo_tmp.png
 background: false

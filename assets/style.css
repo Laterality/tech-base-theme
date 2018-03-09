@@ -110,6 +110,9 @@ span.header-nav-item-delimiter {
   text-align: center;
   padding-bottom: 48px;
 }
+.container {
+  margin-top: 50px;
+}
 .bg1 {
   background-image: url("/assets/img/submenu-cover-1.png");
   background-position: center;
@@ -215,5 +218,32 @@ a.pagination-link-next {
 }
 img.circular {
   border-radius: 50%;
+}
+img.profile {
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author-name {
+  font-weight: bold;
+}
+div.about-delimiter {
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+p.author-comment {
+  color: #bdbdbd;
+  margin-top: 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
