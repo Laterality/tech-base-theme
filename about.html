@@ -10,5 +10,35 @@ layout: default
 	<p class="author-comment">{{ site.comment }}</p>
 	<div class="about-delimiter"></div>
 
-	<h1 class="">SKILLS</h1>
+	<h1 class="resume-title">SKILLS</h1>
+
+	<h2 class="skill-grade-title">Beginner<img class="about-tooltip-icon" src="/assets/img/ic_help_black_48px.svg" data-toggle="tooltip" data-placement="right" title="예제 수준의 프로그램을 작성할 수 있는 수준"></h2>
+	<div class="skill-badge-container">
+		<img class="skill-badge" src="/assets/img/golang_logo.svg" alt="golang">
+		<img class="skill-badge" src="/assets/img/HTML5_Logo.svg" alt="HTML5">
+		<img class="skill-badge" src="/assets/img/CSS3_logo_and_wordmark.svg">
+	</div>
+
+	<h2 class="skill-grade-title">Used<img class="about-tooltip-icon" src="/assets/img/ic_help_black_48px.svg" data-toggle="tooltip" data-placement="right" title="검색이 가능하면 대부분의 기능을 구현할 수 있는 수준"></h2>
+
+	<div class="skill-badge-container">
+		<img class="skill-badge" src="/assets/img/cpp_logo.svg" alt="cpp">
+	</div>
+
+	<h2 class="skill-grade-title">Skilled<img class="about-tooltip-icon" src="/assets/img/ic_help_black_48px.svg" data-toggle="tooltip" data-placement="right" title="프로젝트를 진행해 본 적이 있음"></h2>
+	<div class="skill-badge-container">
+		<img class="skill-badge" src="/assets/img/nodejs-new-pantone-black.svg" alt="node.js">
+		<img class="skill-badge" src="/assets/img/typescript_logo_unofficial.svg" alt="typescript">
+		<img class="skill-badge" src="/assets/img/java_logo.svg" alt="java">
+		<img class="skill-badge" src="/assets/img/Android_Robot_outlined.svg" alt="android">
+	</div>
+
+	<h1 class="resume-title">Projects</h1>
+	<h4>피부를 지켜라</h4>
+	<a href="https://bitbucket.org/Latera_/protectskin/"><img src="/assets/img/Bitbucket-blue.svg"></a>
+	
 </div>
+
+<script type="text/javascript">
+	$(".about-tooltip-icon").tooltip({html: true});
+</script>

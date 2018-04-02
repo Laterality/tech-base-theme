@@ -126,7 +126,7 @@ span.header-nav-item-delimiter {
   background-size: cover;
 }
 #post-list-container {
-  width: 75%;
+  width: 980px;
   margin: auto;
   margin-top: 50px;
   text-align: center;
@@ -164,7 +164,7 @@ p.post-list-item-description {
   color: #bdbdbd;
 }
 #post-content-wrapper {
-  width: 75%;
+  width: 980px;
   margin: auto;
   margin-top: 50px;
 }
@@ -242,8 +242,39 @@ div.about-delimiter {
   margin-bottom: 40px;
 }
 p.author-comment {
+  display: block;
   color: #bdbdbd;
   margin-top: 20px;
   text-align: center;
+}
+.resume-title {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+img.about-tooltip-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top: -10px;
+}
+.skill-grade-title {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.skill-grade-title-desc {
+  color: #bdbdbd;
+}
+.skill-badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.skill-badge {
+  width: 64px;
+  height: 64px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */
