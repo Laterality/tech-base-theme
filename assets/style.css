@@ -1,33 +1,30 @@
 body {
-  font-family: 'NanumGothic, 나눔고딕, "Malgun Gothic", 맑은고딕, "Apple SD Gothic Neo", Meiryo, Dotum, 돋움, sans-serif';
-  font-size: 16px;
-  line-height: 1.8em;
   color: #000000;
-}
-a:hover {
-  color: #000000;
-  text-decoration: none;
-  color: #ff5722;
-}
-a:link a:visited,
-a:active,
-a:focus {
-  text-decoration: none;
 }
 #header {
-  width: 100%;
-  height: 5vh;
-  min-height: 64px;
   background: #0097a7;
-  padding-left: 16px;
-  padding-right: 16px;
 }
-div#header-wrapper-logo {
-  height: 100%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.nav-logo {
+  color: white;
+}
+.nav-logo:hover {
+  color: white;
+  text-decoration: none;
+}
+.nav-logo:focus {
+  color: white;
+  text-decoration: none;
+}
+.nav-logo:link {
+  color: white;
+  text-decoration: none;
+}
+.nav-logo:active {
+  color: white;
+  text-decoration: none;
+}
+.nav-logo:visited {
+  text-decoration: none;
 }
 div#header-wrapper-nav {
   height: 100%;
@@ -36,29 +33,23 @@ div#header-wrapper-nav {
   flex-direction: column;
   justify-content: center;
 }
-nav#header-nav {
-  display: table-cell;
-  vertical-align: middle;
-}
-a.header-nav-item {
-  text-align: center;
-  font-size: 1.4em;
+a.nav-item-link {
   color: white;
 }
-a.header-nav-item:hover {
+a.nav-item-link:hover {
   text-decoration: none;
   color: #ff5722;
 }
-a.header-nav-item:focus {
+a.nav-item-link:focus {
   text-decoration: none;
 }
-a.header-nav-item:link {
+a.nav-item-link:link {
   text-decoration: none;
 }
-a.header-nav-item:active {
+a.nav-item-link:active {
   text-decoration: none;
 }
-a.header-nav-item:visited {
+a.nav-item-link:visited {
   text-decoration: none;
 }
 div#content {
@@ -89,26 +80,19 @@ div#content {
   width: 32px;
   height: 32px;
 }
-span.header-nav-item-delimiter {
-  text-align: center;
-  font-size: 1.4em;
-  color: white;
-  padding-left: 8px;
-  padding-right: 8px;
-}
 .sub-menu-header {
   width: 100%;
   height: 320px;
   background: #006978;
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .sub-menu-title {
   color: white;
-  font-size: 3.6em;
-  display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding-bottom: 48px;
+  font-weight: bold;
 }
 .container {
   margin-top: 50px;
@@ -125,20 +109,14 @@ span.header-nav-item-delimiter {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg3 {
+  background-image: url("/assets/img/black-and-white-computer-display-220357.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #post-list-container {
   width: 980px;
-  margin: auto;
-  margin-top: 50px;
-  text-align: center;
-}
-.post-list-delimiter {
-  background: #bdbdbd;
-  width: 100%;
-  height: 1px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .post-list-item-title-wrapper {
   text-align: left;
@@ -149,9 +127,6 @@ span.header-nav-item-delimiter {
 .post-list-item-title-wrapper:active,
 .post-list-item-title-wrapper:focus {
   text-decoration: none;
-}
-p.post-list-item-description {
-  text-align: left;
 }
 .post-list-item-title {
   color: #000000;
@@ -165,8 +140,6 @@ p.post-list-item-description {
 }
 #post-content-wrapper {
   width: 980px;
-  margin: auto;
-  margin-top: 50px;
 }
 .post-content-title {
   color: #000000;
@@ -178,27 +151,8 @@ p.post-list-item-description {
 .post-content-content {
   margin-top: 35px;
 }
-.back-to-list {
-  font-size: 1.3em;
-  margin-top: 2.0em;
-}
-#main-content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.main-content-box {
-  width: 100%;
-  flex: 1;
-}
-.main-recent-posts-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.main-recent-post {
-  border: 2px solid gray;
+.post-content-back-to-list > a:hover {
+  text-decoration: none;
 }
 div#post-list-pagination-wrapper {
   width: 75%;
@@ -233,19 +187,51 @@ img.profile {
   font-weight: bold;
 }
 div.about-delimiter {
-  width: 100%;
+  width: 640px;
   height: 2px;
   background: black;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 15px;
-  margin-bottom: 40px;
 }
 p.author-comment {
   display: block;
   color: #bdbdbd;
   margin-top: 20px;
   text-align: center;
+}
+.about-intro-container {
+  width: 100%;
+}
+.about-intro {
+  width: 100%;
+  height: 100%;
+}
+.about-intro-title {
+  color: white;
+}
+.about-intro-subtitle {
+  color: white;
+  opacity: 0.7;
+}
+.about-intro-content {
+  color: white;
+}
+.about-intro-iam {
+  background: #0097a7;
+  opacity: 0.95;
+}
+.about-intro-ican {
+  background: #56c8d8;
+  opacity: 0.95;
+}
+.about-intro-ican .about-intro-ican-text {
+  color: white;
+  opacity: 1;
+}
+.about-intro-ican .about-intro-ican-list > li {
+  color: white;
+}
+.about-intro-empty {
+  width: 50%;
+  height: 100%;
 }
 .resume-title {
   margin-top: 24px;
@@ -274,7 +260,19 @@ img.about-tooltip-icon {
 .skill-badge {
   width: 64px;
   height: 64px;
-  margin-left: 8px;
-  margin-right: 8px;
+}
+div.project-skill-image-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+img.project-skill {
+  height: 48px;
+}
+img.project-skill + .project-skill {
+  margin-left: 1.25rem;
+}
+div.project-card-body {
+  width: 18rem;
 }
 /*# sourceMappingURL=style.css.map */

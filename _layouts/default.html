@@ -1,26 +1,27 @@
 {% include head.html %}
 <body>
-	<header id="header">
+	<nav class="navbar navbar-expand px-3" id="header">
 		<!-- header content -->
 		{% if site.logo %}
-		<div id="header-wrapper-logo">
-			<a id="header-logo" href="/" >
-				<img src="{{site.logo}}" alt="{{site.name}}"/>
-			</a>
-		</div>
+		<a id="navbar-brand" class="nav-logo" href="/" >
+			<img src="{{site.logo}}" alt="{{site.name}}"/>
+		</a>
+		{% else %}
+		<a class="navbar-brand nav-logo" href="/">{{site.name}}</a>
 		{% endif %}
 
-		<div id="header-wrapper-nav">
-			<nav id="header-nav">
-				<a class="header-nav-item" href="/">Blog</a>
+		<!-- <div id="header-wrapper-nav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link nav-item-link" href="/">Blog</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link nav-item-link" href="/about">About</a>
+				</li>
+			</ul>
+		</div> -->
 
-				<span class="header-nav-item-delimiter">|</span>
-
-				<a class="header-nav-item" href="/about">About</a>
-			</nav>
-		</div>
-
-	</header>
+	</nav>
 	<div id="content">
 		{{ content }}
 	</div>

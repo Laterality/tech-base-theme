@@ -2,17 +2,14 @@
 layout: default
 ---
 {% include blog_header.html %}
-<div id="post-list-container">
-	{% for post in paginator.posts %}
+<div id="post-list-container" class="mt-5 mx-auto">
+	<ul class="list-group list-group-flush">
+		{% for post in paginator.posts %}
 
 		{% include list_item_post.html post=post %}
 		{% assign last = paginator.posts | last %}
-		{% if post != last %}
-			<div class="post-list-delimiter"></div>
-		{% endif %}
 	{% endfor %}
-
-	<!-- TODO: pagination should inserted here -->
+	</ul>
 
 	<div id="post-list-pagination-wrapper">
 		{% if paginator.previous_page %}
