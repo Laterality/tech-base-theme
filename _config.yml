@@ -13,7 +13,7 @@ comment:
 github_username: Laterality
 mail: bluesky0255@gmail.com
 
-logo: /assets/img/logo_tmp.png
+logo: false
 background: false
 navigation: true
 paginate: 5
